@@ -1,0 +1,87 @@
+/* Styling for entire page */
+body {
+    background-color: #9a7b78;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 600px;      /* Max width so it doesnt streach too much */
+    margin: 0 auto;        /* Centers page horizontally */
+    padding: 20px;         /* Space around content */
+}
+
+#addTask {
+    background-color: #54363b;
+    color: beige;       /* Beige text */
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;         /* Removes default browser border */
+    border-radius: 5px;   /* Rounded corners */
+    cursor: pointer;      /* Hand cursor on hover */
+}
+
+/* Hover effect on "Add Task" button */
+#addTask:hover {
+    background-color: #3a1e22;  /* Becomes darker on hover */
+}
+
+/* Input field for writing tasks */
+#taskInput {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Container that holds all content */
+#list {
+    display: grid;         /* Uses CSS Grid */
+    place-items: center;   /* Centers everything horizontally and vertically */
+}
+
+/* The list itself with tasks */
+#taskList {
+    list-style: none;     /* Removes bullets */
+    padding-left: 0;      /* Removes indentation */
+    margin-top: 20px;     /* Distance to top */
+}
+
+/* Each individual task (list item) */
+#taskList li {
+    display: flex;                    /* Places content side by side */
+    align-items: center;              /* Centers vertically */
+    gap: 10px;                        /* Space between elements */
+    margin-bottom: 10px;              /* Distance between tasks */
+    background-color: whitesmoke;   /* White background */
+    padding: 15px;
+    border-radius: 40px;              /* Very rounded corners */
+    border: 0.5px solid #54363b;    /* Thin brown border */
+}
+
+/* The buttons (🗑️ and ✅) inside each task */
+#taskList button {
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 40px;              /* Round buttons */
+    border: 1.5px solid #54363b;    /* Brown border */
+}
+
+/* Hover effect on buttons */
+#taskList button:hover {
+    transform: scale(1.05);           /* Becomes 5% larger on hover */
+}
+
+/* Task text */
+#taskList span {
+    flex: 1;
+    font-size: 18px;
+}
+
+/* Container for input + button */
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
